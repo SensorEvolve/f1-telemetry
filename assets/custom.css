@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #0a0a0a !important;
+    color: #ffffff !important;
+    overflow-x: hidden;
+}
+
+/* Card styling */
+.card {
+    background: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 8px 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+}
+
+/* Metric cards */
+.metric-card {
+    background: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.metric-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 4px 0;
+}
+
+.metric-label {
+    font-size: 9px;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Dropdown styling */
+.Select-control {
+    background-color: #1a1a1a !important;
+    border: 1px solid #333333 !important;
+    border-radius: 4px !important;
+    color: #ffffff !important;
+    min-height: 28px !important;
+    padding: 2px 6px !important;
+}
+
+.Select-menu-outer {
+    background-color: #1a1a1a !important;
+    border: 1px solid #333333 !important;
+    z-index: 9999 !important;
+    max-height: 250px !important;
+}
+
+.Select-menu {
+    background-color: #1a1a1a !important;
+    max-height: 240px !important;
+    overflow-y: auto !important;
+}
+
+.Select-option {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+    padding: 6px 10px !important;
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+}
+
+.Select-option:hover {
+    background-color: #2a2a2a !important;
+}
+
+.Select-value-label {
+    color: #ffffff !important;
+    font-size: 11px !important;
+}
+
+.Select-placeholder {
+    color: #888888 !important;
+    font-size: 11px !important;
+}
+
+/* Dash dropdown overrides */
+.dash-dropdown {
+    background-color: #1a1a1a !important;
+}
+
+.dash-dropdown .Select-control {
+    background-color: #1a1a1a !important;
+    border-color: #333333 !important;
+    min-height: 28px !important;
+}
+
+.dash-dropdown .Select-menu-outer {
+    background-color: #1a1a1a !important;
+    border-color: #333333 !important;
+    max-height: 250px !important;
+}
+
+.dash-dropdown .Select-value {
+    color: #ffffff !important;
+    padding: 4px 0 !important;
+}
+
+.dash-dropdown .Select-input > input {
+    color: #ffffff !important;
+}
+
+/* Modern dropdown using Dash's new dropdown */
+._dash-undo-redo,
+.dash-spreadsheet-container {
+    background-color: #1a1a1a !important;
+}
+
+div[class*="css-"] div[class*="control"] {
+    background-color: #1a1a1a !important;
+    border-color: #333333 !important;
+    min-height: 28px !important;
+}
+
+div[class*="css-"] div[class*="menu"] {
+    background-color: #1a1a1a !important;
+    border-color: #333333 !important;
+    max-height: 250px !important;
+    overflow-y: auto !important;
+}
+
+div[class*="css-"] div[class*="option"] {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+    padding: 6px 10px !important;
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+}
+
+div[class*="css-"] div[class*="option"]:hover {
+    background-color: #2a2a2a !important;
+}
+
+/* Pills */
+.pill {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(155, 135, 245, 0.2);
+    border: 1px solid #9b87f5;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #9b87f5;
+    margin: 0 4px;
+}
+
+/* Loading */
+._dash-loading {
+    color: #ffffff !important;
+}
+
+._dash-loading-callback {
+    color: #ffffff !important;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+    margin-bottom: 8px;
+}
+
+h1 { font-size: 18px !important; }
+h2 { font-size: 14px !important; }
+h3 { font-size: 12px !important; }
+h4 { font-size: 11px !important; }
+
+/* Labels */
+label {
+    color: #888888 !important;
+}
+
+/* Fix for graph backgrounds */
+.js-plotly-plot .plotly .main-svg {
+    background-color: transparent !important;
+}
+
+/* Prevent graphs from growing */
+.js-plotly-plot {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.js-plotly-plot .plotly {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Card max widths */
+.card {
+    max-width: 100%;
+}
