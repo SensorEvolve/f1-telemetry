@@ -1,5 +1,5 @@
-dash==2.14.2
-plotly==5.18.0
-fastf1==3.3.9
-pandas==2.1.4
-gunicorn==21.2.0
+dash>=2.14.2
+plotly>=5.18.0
+fastf1>=3.3.9
+pandas>=2.2.0
+gunicorn>=21.2.0
